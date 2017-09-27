@@ -3,7 +3,7 @@ import math
 
 # config
 low = 1
-high = 5
+high = 100
 limit = math.log(high-low+1,2)
 limit = math.ceil(limit)
 
@@ -44,13 +44,20 @@ def check_guess(guess, rand):
 
 def show_result(guess, rand):
     if guess == rand:
-        print("You win!")
+        print("**************************")
+        print("     Congratulations!     ")
+        print("         You Win!         ")
+        print("**************************")
     else:
-        print("You are such a loser! The number was " + str(rand) + ".")
+        print("**************************")
+        print("         You lose!        ")
+        print("     The Number was: " + str(rand))
+        print("**************************")
 
 def play_again():
     while True:
-        decision = input("Would you like to play again? (yes/no) ").lower()
+        print("Would you like to play again? (yes/no)")
+        decision = input("").lower()
         
         if decision == 'y' or decision == 'yes':
             return True
