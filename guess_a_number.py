@@ -17,7 +17,7 @@ def show_start_screen():
 def show_credits():
     print("**************************")
     print("* This awesome game was  *")
-    print("* created by Stephen Lee.*")
+    print("* created by Stephen Lee *")
     print("* Thanks to: Coop Dogg   *")
     print("**************************")
     
